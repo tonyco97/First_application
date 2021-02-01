@@ -1,0 +1,23 @@
+{
+    "id": "nethserver-antonio",
+    "name": "Antonio",
+    "summary": "Prima applicazione Antonio",
+    "description": "Prima applicazione creata da Antonio",
+    "url": "",
+    "homepage": "https://github.com/NethServer/nethserver-antonio",
+    "provides": ["nethserver-antonio"],
+    "release": {
+        "version": "_RELEASE_"
+    },
+    "tags": ["antonio", "clamav", "nethserver"],
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/NethServer/dev/issues"
+    },
+    "author": {
+        "name": "Antonio Colapietro",
+        "url": "https://github.com/NethServer/nethserver-antonio",
+        "email": "antonio.colapietro@nethesis.it"
+    },
+    "icon": "logo.png"
+}
