@@ -1,0 +1,82 @@
+<template>
+  <div>
+    <h2>{{$t('about.title')}}Antonio</h2>
+
+    <div v-if="!view.isLoaded" class="spinner spinner-lg view-spinner"></div>
+    <div v-if="view.isLoaded">
+      <img class="logo" src="logo.png">
+      <h2>{{info.name}}</h2>
+      <h3>{{info.description}}</h3>
+
+
+      <div class="list-group-item info-item">
+        <span class="fa fa-code m-right-sm"></span>
+        <strong>versione {{info.release.version}}</strong>
+      </div>
+
+      <div class="list-group-item info-item">
+        <span class="fa fa-user m-right-sm"></span>
+        <span>{{info.author.name}} | email: {{info.author.email}}</span>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "About",
+  mounted() {
+    this.getInfo();
+  },
+  data() {
+    return {
+      view: {
+        isLoaded: false
+      },
+      info: {}
+    };
+  },
+  methods: {
+    getInfo() {
+      var context = this;
+      nethserver.exec(
+        ["system-apps/read"],
+        {
+          action: "info",
+          name: "nethserver-antonio"
+        },
+        null,
+        function(success) {
+          try {
+            success = JSON.parse(success);
+            context.view.isLoaded = true;
+            context.info = success;
+          } catch (e) {
+            console.error(e);
+            context.view.isLoaded = true;
+          }
+        },
+        function(error) {
+          console.error(error);
+        }
+      );
+    }
+  }
+};
+</script>
+
+<style>
+.m-right-sm {
+  margin-right: 5px;
+}
+
+.info-item {
+  font-size: 14px;
+}
+
+.logo {
+  float: right;
+  width: 65px;
+  height: 65px;
+}
+</style>

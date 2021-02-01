@@ -1,0 +1,28 @@
+{
+    "about": {
+        "title": "About",
+        "website": "Web site",
+        "bug_tracker": "Bug tracker"
+    },
+    "dashboard":{
+        "title": "Antivirus dashboard",
+        "app": "Antivirus",
+        "email_protection": "Email protection",
+        "web_protection": "Web protection",
+        "error_getting_dashboard_data": "Error getting dashboard data",
+        "malware_found": "Malware found",
+        "signatures_loaded": "Signatures loaded",
+        "status": "Status",
+        "no_data_available": "No data available",
+        "other": "Other",
+        "memory_used": "Memory used",
+        "since": "Since",
+        "no_instance_installed": "No ClamAV instance installed"
+    },
+    "docs": {
+        "official_signatures": "Official ClamAV signatures use a large amount of memory. Official signatures detect many old threats but are not very effective against the latest malware.",
+        "unofficial_signatures_ratings": "Higher rating means more blocked threats but also a higher probability of false positives. Recommended ratings are 'Low' and 'Medium'."
+    },
+    "save": "Save",
+    "cancel": "Cancel"
+}
