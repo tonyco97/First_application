@@ -1,6 +1,6 @@
 Summary: Integration of Clam AntiVirus for email and filesystem checks.
 Name: nethserver-antonio
-Version: 1.0
+Version: 1.0.0
 Release: 1%{?dist}
 License: GPLv3
 URL: %{url_prefix}/%{name} 
