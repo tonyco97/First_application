@@ -5,8 +5,8 @@
         "bug_tracker": "Bug tracker"
     },
     "dashboard":{
-        "title": "Antivirus dashboard",
-        "app": "Antivirus",
+        "title": "Antonio dashboard",
+        "app": "Antonio",
         "email_protection": "Email protection",
         "web_protection": "Web protection",
         "error_getting_dashboard_data": "Error getting dashboard data",

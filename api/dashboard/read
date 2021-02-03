@@ -23,4 +23,3 @@
 #this is what is showed in the dashboard
 echo -n "{ \"appName\": \"Antonio prima app\"}"
 
-#
